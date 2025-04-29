@@ -1,0 +1,51 @@
+name: rs_store_app
+description: A new Flutter project.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.2 <4.0.0" # Fixed version constraint format
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cached_network_image: ^3.3.0 # Moved to root dependencies
+  intl: ^0.19.0 # Added back as it's required by flutter_localizations
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/RS-512X512.png"
+  android_launcher_name: "អ អេស ស្ត័រ"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/W1.png
+    - assets/images/W2.png
+    - assets/images/W3.png
+    - assets/images/W4.png
+    - assets/images/W5.png
+    - assets/images/W6.png
+    - assets/images/W7.png
+    - assets/images/W8.png
+    - assets/images/Baner.jpg
+    - assets/icon/
+    - assets/fonts/ # Added fonts directory to assets
+
+  fonts:
+    - family: KantumruyPro
+      fonts:
+        - asset: assets/fonts/KantumruyPro-Regular.ttf
+        - asset: assets/fonts/KantumruyPro-Bold.ttf
+          weight: 700
